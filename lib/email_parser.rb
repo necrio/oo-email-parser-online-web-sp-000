@@ -8,7 +8,8 @@ class EmailParser
 
 attr_accessor :emails
 
-def EmailParser
+def EmailParser(emails)
+  emails.parse
 
 
 end
