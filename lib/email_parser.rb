@@ -11,8 +11,12 @@ class EmailParser
   end
 
 
-def EmailParser(emails)
-  emails.parse
+def EmailParser
+  emails.split.map do |addresses|
+    addresses.split(',')
+  end
+  .flatten.uniq
+end
 
 
 end
@@ -38,3 +42,4 @@ end
 
 
 end
+  
