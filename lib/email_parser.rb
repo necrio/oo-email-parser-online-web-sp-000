@@ -11,7 +11,7 @@ class EmailParser
   end
 
 
-def EmailParser
+def parse
   CSV_emails.split.map do |addresses|
     addresses.split(',')
   end
